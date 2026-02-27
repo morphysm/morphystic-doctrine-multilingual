@@ -1,17 +1,19 @@
 # morphysm-doctrine-multilingual
-## Multilingual repository containing official Morphysm Doctrine translations and primary texts.
 
-About
+**Multilingual repository for official Morphysm Doctrine translations and primary texts.**
 
-Morphysm is a transdisciplinary framework exploring post-anthropocentric cognition, ritual deconstruction, demonology and computational integration as vectors of ontological transformation.
+## About
 
-🌐 Interactive Index / インタラクティブ・インデックス
+Morphysm is a transdisciplinary framework exploring post-anthropocentric cognition, ritual deconstruction, demonology, and computational integration as vectors of ontological transformation.
 
-**Visit the web interface:**  
-🔗https://morphysm01index.netlify.app/
+## 🌐 Interactive Index / インタラクティブ・インデックス
 
-Full book PDFs and additional materials are available on Ko-fi:
+Explore the interactive web interface:  
+**→ [morphysm01index.netlify.app](https://morphysm01index.netlify.app/)**
 
-書籍の完全版PDFsおよび追加資料は、Ko-fiにて公開しています。
+## 📚 Full Materials / 完全版資料
 
-👉 https://ko-fi.com/alexandercripple
+Complete book PDFs and additional materials are available on Ko-fi:  
+書籍の完全版PDFおよび追加資料は、Ko-fiにて公開しています。
+
+**→ [ko-fi.com/alexandercripple](https://ko-fi.com/alexandercripple)**
