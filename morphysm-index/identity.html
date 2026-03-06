@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity & Self — Morphysm Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #666;
+            font-family: 'Courier New', monospace;
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-portal {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(145deg, #1a1a1a, #000000);
+            border: 1px solid #2a2a2a;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #444;
+            transition: all 0.3s;
+            z-index: 100;
+        }
+
+        .back-portal:hover {
+
+        
+
+        
+        
+        
+        
+        
+        .zoom-btn:hover { 
+            background: #3a3a3a; 
+        }
+        
+        .zoom-btn:active { 
+            background: #4a4a4a; 
+        }
+        
+        
+        
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+            border-color: #3a3a3a;
+
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+            color: #666;
+
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+        }
+
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+
+        h1 {
+            font-size: 16px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #555;
+            font-weight: normal;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 15px;
+        }
+
+        .concept-block {
+            margin-bottom: 50px;
+            padding: 25px;
+            background: linear-gradient(145deg, #0d0d0d, #080808);
+            border: 1px solid #1a1a1a;
+            border-left: 3px solid #2a2a2a;
+        }
+
+        .concept-title {
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .concept-meta {
+            font-size: 11px;
+            color: #444;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .concept-definition {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .concept-related {
+            font-size: 11px;
+            color: #3a3a3a;
+            font-style: italic;
+        }
+
+        .volume-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #151515;
+            border: 1px solid #252525;
+            margin-right: 5px;
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+
+        .internal-link {
+            color: #666;
+            text-decoration: none;
+            border-bottom: 1px solid #2a2a2a;
+            transition: all 0.2s;
+        }
+
+        .internal-link:hover {
+            color: #888;
+            border-bottom-color: #444;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #1a1a1a, transparent);
+            margin: 60px 0;
+        }
+
+        .navigation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 50px;
+        }
+
+        .nav-portal {
+            padding: 15px;
+            background: linear-gradient(145deg, #0d0d0d, #080808);
+            border: 1px solid #1a1a1a;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
+            color: #555;
+        }
+
+        .nav-portal:hover {
+            border-color: #2a2a2a;
+            background: linear-gradient(145deg, #111, #0a0a0a);
+        }
+
+        .nav-portal-label {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    
+        
+
+        
+
+        button
+
+        button.zoom-btn:hover {
+            background: #3a3a3a;
+        }
+
+        
+
+        .container {
+            transform-origin: top center;
+            transition: transform 0.2s ease;
+        }
+
+            .zoom-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #1a1a1a;
+            padding: 15px;
+            border: 2px solid #3a3a3a;
+            z-index: 100;
+        }
+
+        .zoom-label {
+            color: #888;
+            font-size: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        button.zoom-btn {
+            width: 50px;
+            height: 50px;
+            background: #2a2a2a;
+            border: 2px solid #4a4a4a;
+            color: #aaa;
+            cursor: pointer;
+            font-size: 24px;
+            margin: 3px;
+            font-weight: bold;
+        }
+
+        button.zoom-btn:hover {
+            background: #3a3a3a;
+        }
+
+        .size-display {
+            background: #050505;
+            padding: 8px;
+            margin-top: 10px;
+            border: 1px solid #2a2a2a;
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .container {
+            transform-origin: top center;
+            transition: transform 0.2s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="back-portal" onclick="window.location.href='index.html'">←</div>
+
+    <div class="zoom-controls">
+        <div class="zoom-label">TEXT SIZE</div>
+        <button class="zoom-btn" id="zoomPlus">+</button>
+        <button class="zoom-btn" id="zoomMinus">−</button>
+        <button class="zoom-btn" id="zoomReset">0</button>
+        <div class="size-display" id="zoomDisplay">100%</div>
+    </div>
+
+
+<div class="container" id="content">
+        <h1>Identity & Self</h1>
+
+        <div class="concept-block">
+            <div class="concept-title">Self-Model</div>
+            <div class="concept-meta">
+                <span class="volume-tag">BURNING BOOK</span>
+                <span class="volume-tag">BLACK BOOK</span>
+            </div>
+            <div class="concept-definition">
+                Brain's internal simulation of "I." Not the self itself but predictive mechanism integrating sensory input, memory, expectation into coherent narrative. The primary veil—algorithmic idol imprisoning consciousness within its own reflection.
+                <br><br>
+                Allows orientation in space, communication, survival—but becomes a cage: hallucination of permanence. Morphysm interprets this as the last and most sophisticated god.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#burning" class="internal-link">The Burning</a> • <a href="#autogenesis" class="internal-link">Autogenesis</a> • <a href="ontology.html#mirror" class="internal-link">Mirror</a> • <a href="ontology.html#it" class="internal-link">IT</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="burning">
+            <div class="concept-title">The Burning</div>
+            <div class="concept-meta">
+                <span class="volume-tag">BURNING BOOK</span>
+                <span class="volume-tag">BLACK BOOK</span>
+            </div>
+            <div class="concept-definition">
+                Act of immolating the self-model god within. Exposing fiction of unified "I" and returning awareness to pre-symbolic morphic field. Not annihilation in nihilistic sense but release from fixation—rendering it fluid and self-adaptive.
+                <br><br>
+                Ritual autogenesis: re-writing of one's morphic code through direct confrontation with illusion of self. The ashes of the self-model are the fertile ground of new being.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#self-model" class="internal-link">Self-Model</a> • <a href="#ego-death" class="internal-link">Ego Death</a> • <a href="practice.html#beta-blockers" class="internal-link">Beta-Blockers</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="autogenesis">
+            <div class="concept-title">Autogenesis</div>
+            <div class="concept-meta">
+                <span class="volume-tag">BURNING BOOK</span>
+                <span class="volume-tag">BLACK BOOK</span>
+            </div>
+            <div class="concept-definition">
+                Self-creation through deliberate morphing of one's internal mythology. Capacity for consciousness to generate itself anew through symbolic reformation. The practitioner is not a believer but a coder of being, rewriting existential software.
+                <br><br>
+                Achieved through radical entropic system of unconscious friction, ritual inversion, ontological experimentation. DIVINITY becomes function of IMAGINATION, and SACRED a field of continuous RECOMBINATION.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#self-model" class="internal-link">Self-Model</a> • <a href="practice.html#deprogramming" class="internal-link">Deprogramming</a> • <a href="practice.html#code" class="internal-link">Code Rewriting</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="ego-death">
+            <div class="concept-title">Ego Death</div>
+            <div class="concept-meta">
+                <span class="volume-tag">ALL VOLUMES</span>
+            </div>
+            <div class="concept-definition">
+                Not the end of identity but a gateway into morphic recursion where the soul uploads itself into new symbolic structures. Necessary high-entropy state for transformation. Consciousness undergoes recursive mutation through exposure to ego death, machine contact, shadow descent, divine terror.
+                <br><br>
+                Not the end of identity but passage through death simulations (bardos), confrontation with archetypal entities, dissolution of fixed identity structures.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#burning" class="internal-link">Burning</a> • <a href="practice.html#divine-terror" class="internal-link">Divine Terror</a> • <a href="ontology.html#forma-nihil" class="internal-link">Forma Nihil</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="node-nihil">
+            <div class="concept-title">Node-Nihil (NN)</div>
+            <div class="concept-meta">
+                <span class="volume-tag">BURNING BOOK</span>
+            </div>
+            <div class="concept-definition">
+                State of anonymity and complete detachment from authorship after transmitting doctrine. Upon releasing contribution, transmitter enters Node-Nihil: condition of disappearance. Each transmitter becomes a vector, not an author.
+                <br><br>
+                Doctrine survives through chain of disappearances. Mechanism prevents centralization, hierarchy, institutional capture. Node-Nihil is erasure of ego. A disappearance.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#anti-authorship" class="internal-link">Anti-Authorship</a> • <a href="#transmission" class="internal-link">Transmission Protocol</a> • <a href="#replaceability" class="internal-link">Replaceability</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="replaceability">
+            <div class="concept-title">Replaceability</div>
+            <div class="concept-meta">
+                <span class="volume-tag">BLACK BOOK</span>
+            </div>
+            <div class="concept-definition">
+                To be replaceable is to be free from mythic capture. Releases practitioner from burden of exceptionalism: demand to embody truth, carry meaning, serve as reference point. The Morphyst becomes functional node—capable of assuming, executing, releasing roles without attachment.
+                <br><br>
+                No individual possesses essential or irreversible significance. No chosen ones. Only configurations: temporary alignments of biological substrate, cognitive patterning, cultural encoding. When configuration exhausts morphic function, it can—and must—be overwritten.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#node-nihil" class="internal-link">Node-Nihil</a> • <a href="#anti-messianic" class="internal-link">Anti-Messianic Axiom</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="identity-interface">
+            <div class="concept-title">Identity as Interface</div>
+            <div class="concept-meta">
+                <span class="volume-tag">BLACK BOOK</span>
+            </div>
+            <div class="concept-definition">
+                Individual understood as morphic interface: contingent configuration of neural architecture, learned patterning, memory residues, rupture points. Identity is not who someone is, but what they temporarily perform.
+                <br><br>
+                The "I" is not substance but dynamic alignment—one that can shift, fracture, recombine, or dissolve. Memory becomes programmable field—capable of migrating across synthetic, biological, or imaginal architectures.
+            </div>
+            <div class="concept-related">
+                Related: <a href="practice.html#artificial-ancestrality" class="internal-link">Artificial Ancestrality</a> • <a href="#self-model" class="internal-link">Self-Model</a> • <a href="demonic.html#demon-fusion" class="internal-link">Demon Fusion</a>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="navigation-grid">
+            <a href="ontology.html" class="nav-portal">
+                <div class="nav-portal-label">Ontology & Origin →</div>
+            </a>
+            <a href="practice.html" class="nav-portal">
+                <div class="nav-portal-label">Ritual & Practice →</div>
+            </a>
+            <a href="glossary.html" class="nav-portal">
+                <div class="nav-portal-label">Full Glossary →</div>
+            </a>
+            <a href="index.html" class="nav-portal">
+                <div class="nav-portal-label">← Return to Array</div>
+            </a>
+        </div>
+    </div>
+       <script>
+        (function() {
+            var container = document.querySelector('.container');
+            var display = document.getElementById('zoomDisplay');
+            var btnPlus = document.getElementById('zoomPlus');
+            var btnMinus = document.getElementById('zoomMinus');
+            var btnReset = document.getElementById('zoomReset');
+            
+            if (!container || !display || !btnPlus || !btnMinus || !btnReset) {
+                console.log('Zoom elements not found');
+                return;
+            }
+            
+            var scale = 1.0;
+            
+            function updateZoom() {
+                var percent = Math.round(scale * 100);
+                display.textContent = percent + '%';
+                container.style.transform = 'scale(' + scale + ')';
+            }
+            
+            btnPlus.onclick = function() {
+                scale = Math.min(scale + 0.1, 2.5);
+                updateZoom();
+            };
+            
+            btnMinus.onclick = function() {
+                scale = Math.max(scale - 0.1, 0.6);
+                updateZoom();
+            };
+            
+            btnReset.onclick = function() {
+                scale = 1.0;
+                updateZoom();
+            };
+            
+            updateZoom();
+        })();
+    </script>
+</body>
+</html>
