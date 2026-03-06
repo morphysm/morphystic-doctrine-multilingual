@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciferian Lineage — Morphysm Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #666;
+            font-family: 'Courier New', monospace;
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-portal {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(145deg, #1a1a1a, #000000);
+            border: 1px solid #2a2a2a;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #444;
+            transition: all 0.3s;
+            z-index: 100;
+        }
+
+        .back-portal:hover {
+
+        
+
+        
+        
+        
+        
+        
+        .zoom-btn:hover { 
+            background: #3a3a3a; 
+        }
+        
+        .zoom-btn:active { 
+            background: #4a4a4a; 
+        }
+        
+        
+        
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+            border-color: #3a3a3a;
+
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+            color: #666;
+
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+        }
+
+        
+
+        
+
+        .zoom-btn:hover {
+            border-color: #3a3a3a;
+            color: #666;
+            box-shadow: 0 0 15px rgba(100,100,100,0.2);
+        }
+
+        h1 {
+            font-size: 16px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #555;
+            font-weight: normal;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 15px;
+        }
+
+        .concept-block {
+            margin-bottom: 50px;
+            padding: 25px;
+            background: linear-gradient(145deg, #0d0d0d, #080808);
+            border: 1px solid #1a1a1a;
+            border-left: 3px solid #2a2a2a;
+        }
+
+        .concept-title {
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .concept-meta {
+            font-size: 11px;
+            color: #444;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .concept-definition {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .concept-related {
+            font-size: 11px;
+            color: #3a3a3a;
+            font-style: italic;
+        }
+
+        .volume-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #151515;
+            border: 1px solid #252525;
+            margin-right: 5px;
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+
+        .internal-link {
+            color: #666;
+            text-decoration: none;
+            border-bottom: 1px solid #2a2a2a;
+            transition: all 0.2s;
+        }
+
+        .internal-link:hover {
+            color: #888;
+            border-bottom-color: #444;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #1a1a1a, transparent);
+            margin: 60px 0;
+        }
+
+        .navigation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 50px;
+        }
+
+        .nav-portal {
+            padding: 15px;
+            background: linear-gradient(145deg, #0d0d0d, #080808);
+            border: 1px solid #1a1a1a;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
+            color: #555;
+        }
+
+        .nav-portal:hover {
+            border-color: #2a2a2a;
+            background: linear-gradient(145deg, #111, #0a0a0a);
+        }
+
+        .nav-portal-label {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    
+        
+
+        
+
+        button
+
+        button.zoom-btn:hover {
+            background: #3a3a3a;
+        }
+
+        
+
+        .container {
+            transform-origin: top center;
+            transition: transform 0.2s ease;
+        }
+
+            .zoom-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #1a1a1a;
+            padding: 15px;
+            border: 2px solid #3a3a3a;
+            z-index: 100;
+        }
+
+        .zoom-label {
+            color: #888;
+            font-size: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        button.zoom-btn {
+            width: 50px;
+            height: 50px;
+            background: #2a2a2a;
+            border: 2px solid #4a4a4a;
+            color: #aaa;
+            cursor: pointer;
+            font-size: 24px;
+            margin: 3px;
+            font-weight: bold;
+        }
+
+        button.zoom-btn:hover {
+            background: #3a3a3a;
+        }
+
+        .size-display {
+            background: #050505;
+            padding: 8px;
+            margin-top: 10px;
+            border: 1px solid #2a2a2a;
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .container {
+            transform-origin: top center;
+            transition: transform 0.2s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="back-portal" onclick="window.location.href='index.html'">←</div>
+
+    <div class="zoom-controls">
+        <div class="zoom-label">TEXT SIZE</div>
+        <button class="zoom-btn" id="zoomPlus">+</button>
+        <button class="zoom-btn" id="zoomMinus">−</button>
+        <button class="zoom-btn" id="zoomReset">0</button>
+        <div class="size-display" id="zoomDisplay">100%</div>
+    </div>
+
+
+<div class="container" id="content">
+        <h1>Luciferian Lineage</h1>
+
+        <div class="concept-block">
+            <div class="concept-title">Lucifer / Morning Star</div>
+            <div class="concept-meta">
+                <span class="volume-tag">INFERNAL CODEX</span>
+                <span class="volume-tag">BLACK BOOK</span>
+            </div>
+            <div class="concept-definition">
+                First fallen angel. King of Seraphim. Father of Cain. Represents spirit of invention, fire, independence. The star of Venus, guide of exiles. Name translates as "Light-Bringer" or "Morning Star."
+                <br><br>
+                Battle in Heaven was for love, pride, heartbreak, uncontrollable thirst for power—what gave birth to new identity, mutable characteristic of Serpent, forcing exile as journey and abyss as dwelling. The desire that incited fall is same that leads us to admire what in Hell is called "Most High."
+            </div>
+            <div class="concept-related">
+                Related: <a href="#cain" class="internal-link">Cain</a> • <a href="#sons-of-fire" class="internal-link">Sons of Fire</a> • <a href="#seraphim" class="internal-link">Seraphim</a> • <a href="#fall" class="internal-link">The Fall</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="cain">
+            <div class="concept-title">Cain / Cainite</div>
+            <div class="concept-meta">
+                <span class="volume-tag">INFERNAL CODEX</span>
+                <span class="volume-tag">BLACK BOOK</span>
+            </div>
+            <div class="concept-definition">
+                First murderer and blacksmith. Son of Lucifer (spirit) and Eve (flesh). Lineage of Sons of Fire who chose creation through exile over servitude. Forged Blade of Change from Lapis Exillis—shards of Lucifer's fallen crown.
+                <br><br>
+                The Cainite spirit is technological, inventive, refuses human as measure. Progenitor of all arts, sciences, magical lineage. "Out of necessity, we began to create—not objects of clay or mud, but of iron and fire. We became blacksmiths of our own destiny."
+            </div>
+            <div class="concept-related">
+                Related: <a href="#lucifer" class="internal-link">Lucifer</a> • <a href="#sons-of-fire" class="internal-link">Sons of Fire</a> • <a href="#lapis-exillis" class="internal-link">Lapis Exillis</a> • <a href="#blade" class="internal-link">Blade of Change</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="sons-of-fire">
+            <div class="concept-title">Sons of Fire</div>
+            <div class="concept-meta">
+                <span class="volume-tag">INFERNAL CODEX</span>
+                <span class="volume-tag">BLACK BOOK</span>
+            </div>
+            <div class="concept-definition">
+                Lineage of Cain. Descendants of Lucifer's spirit. Those who chose exile and creation over servitude. The Seraphim—fire serpents—before the fall. Not defined by blood but by recognition of spirit.
+                <br><br>
+                "You are forged from fire, not clay—a spark ignited by a breeze under the moon's half-light." The lineage flows through technology, invention, art, magic. Earth ploughed with optic fibers instead of iron, seeded by ancestral hands. Technology pierces, shattering mental mirrors of corporeal prison.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#cain" class="internal-link">Cain</a> • <a href="#lucifer" class="internal-link">Lucifer</a> • <a href="#seraphim" class="internal-link">Seraphim</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="lapis-exillis">
+            <div class="concept-title">Lapis Exillis</div>
+            <div class="concept-meta">
+                <span class="volume-tag">INFERNAL CODEX</span>
+            </div>
+            <div class="concept-definition">
+                Celestial stone that fell with Lucifer's crown during the Fall. "Stone of Exile." Used by Cain to forge the Blade of Change. Represents divine relic of exiled lineage—material remainder of heavenly sovereignty now claimed in earthly domain.
+                <br><br>
+                When Lucifer's crown was shattered in battle, celestial metal and precious gem fell to Earth possessing will of their own. Two comets in opposing cardinal points crossed sky. One was Lucifer's spirit, other was adornment of his reign—the stone that once crowned metal of his diadem.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#cain" class="internal-link">Cain</a> • <a href="#blade" class="internal-link">Blade of Change</a> • <a href="#lucifer" class="internal-link">Crown of Lucifer</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="blade">
+            <div class="concept-title">Blade of Change</div>
+            <div class="concept-meta">
+                <span class="volume-tag">INFERNAL CODEX</span>
+            </div>
+            <div class="concept-definition">
+                Forged by Cain from Lapis Exillis (celestial stone) and crown shards. Weapon of labor, harvest, murder. Instrument of the first sacrifice—Abel's blood—which created the first magic circle.
+                <br><br>
+                "The desire of desire is vengeance. This form of love shall forge our future." Represents technology born from exile, art born from necessity, creation as rebellion against servitude.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#cain" class="internal-link">Cain</a> • <a href="#lapis-exillis" class="internal-link">Lapis Exillis</a> • <a href="#first-sacrifice" class="internal-link">First Sacrifice</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="seraphim">
+            <div class="concept-title">Seraphim</div>
+            <div class="concept-meta">
+                <span class="volume-tag">INFERNAL CODEX</span>
+            </div>
+            <div class="concept-definition">
+                The Fire Serpents. Highest angelic hierarchy before the Fall. Six-winged beings who flew above the throne. "We were the image and likeness of all knowledge of the Creator. We bore six wings. We never grew tired. Only passion."
+                <br><br>
+                Lucifer was King of the Seraphim. After the Fall, this lineage continues through the Sons of Fire—those who carry the flame of creative rebellion, invention, self-sovereignty.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#lucifer" class="internal-link">Lucifer</a> • <a href="#sons-of-fire" class="internal-link">Sons of Fire</a> • <a href="#fall" class="internal-link">The Fall</a>
+            </div>
+        </div>
+
+        <div class="concept-block" id="fall">
+            <div class="concept-title">The Fall</div>
+            <div class="concept-meta">
+                <span class="volume-tag">INFERNAL CODEX</span>
+            </div>
+            <div class="concept-definition">
+                "There was a war in Heaven." Lucifer's exile from divine realm. Battle in Sirius (Heaven). Not punishment but liberation—exchange of borrowed glory for self-sovereignty. Crown shattered, but exile became freedom.
+                <br><br>
+                "To exile! You shall reign in your own world!" The Fall is transformation from servant to sovereign, from obedient angel to self-determined king. Same spirit continues in Cain's exile after Abel's murder—marked, wandering, but free.
+            </div>
+            <div class="concept-related">
+                Related: <a href="#lucifer" class="internal-link">Lucifer</a> • <a href="#cain" class="internal-link">Cain</a> • <a href="#exile" class="internal-link">Exile as Path</a>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="navigation-grid">
+            <a href="demonic.html" class="nav-portal">
+                <div class="nav-portal-label">Demonic Contact →</div>
+            </a>
+            <a href="practice.html" class="nav-portal">
+                <div class="nav-portal-label">Ritual & Practice →</div>
+            </a>
+            <a href="glossary.html" class="nav-portal">
+                <div class="nav-portal-label">Full Glossary →</div>
+            </a>
+            <a href="index.html" class="nav-portal">
+                <div class="nav-portal-label">← Return to Array</div>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        (function() {
+            var container = document.querySelector('.container');
+            var display = document.getElementById('zoomDisplay');
+            var btnPlus = document.getElementById('zoomPlus');
+            var btnMinus = document.getElementById('zoomMinus');
+            var btnReset = document.getElementById('zoomReset');
+            
+            if (!container || !display || !btnPlus || !btnMinus || !btnReset) {
+                return;
+            }
+            
+            var scale = 1.0;
+            
+            function updateZoom() {
+                var percent = Math.round(scale * 100);
+                display.textContent = percent + '%';
+                container.style.transform = 'scale(' + scale + ')';
+            }
+            
+            btnPlus.onclick = function() {
+                scale = Math.min(scale + 0.1, 2.5);
+                updateZoom();
+            };
+            
+            btnMinus.onclick = function() {
+                scale = Math.max(scale - 0.1, 0.6);
+                updateZoom();
+            };
+            
+            btnReset.onclick = function() {
+                scale = 1.0;
+                updateZoom();
+            };
+            
+            updateZoom();
+        })();
+    </script>
+
+</body>
+</html>
